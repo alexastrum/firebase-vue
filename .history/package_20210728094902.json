@@ -1,0 +1,44 @@
+{
+  "name": "firebase-vue",
+  "version": "0.0.1",
+  "description": "Vue.js 3 Composition API plugin for Firebase",
+  "main": "lib/index.js",
+  "types": "lib/index.d.js",
+  "scripts": {
+    "test": "echo \"No test specified\"",
+    "build": "tsc",
+    "format": "echo \"No formatter specified\"",
+    "lint": "echo \"No linter specified\"",
+    "prepare" : "npm run build",
+    "prepublishOnly" : "npm test && npm run lint",
+    "preversion" : "npm run lint",
+    "version" : "npm run format && git add -A src",
+    "postversion" : "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexastrum/firebase-vue.git"
+  },
+  "keywords": [
+    "vuejs",
+    "firebase",
+    "firestore",
+    "realtime-database",
+    "cloud-functions",
+    "composition-api",
+    "firebase-auth"
+  ],
+  "author": "Alex Astrum <alexastrum@>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexastrum/firebase-vue/issues"
+  },
+  "homepage": "https://github.com/alexastrum/firebase-vue#readme",
+  "dependencies": {
+    "firebase": "^8.8.0",
+    "vue": "^3.1.5"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }
+}

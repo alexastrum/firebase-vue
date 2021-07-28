@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "ES6",
+    "declaration": true,
+    "outDir": "./lib",
+    "strict": true,
+    "moduleResolution": "Node"
+  },
+  "include": ["src/index.ts"],
+  "exclude": ["node_modules", "**/__tests__/*"]
+}
