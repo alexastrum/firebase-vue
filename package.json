@@ -9,11 +9,11 @@
     "build": "tsc",
     "format": "echo \"No formatter specified\"",
     "lint": "echo \"No linter specified\"",
-    "prepare" : "npm run build",
-    "prepublishOnly" : "npm test && npm run lint",
-    "preversion" : "npm run lint",
-    "version" : "npm run format && git add -A src",
-    "postversion" : "git push && git push --tags"
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
@@ -35,7 +35,7 @@
   },
   "homepage": "https://github.com/alexastrum/firebase-vue#readme",
   "dependencies": {
-    "firebase": "^8.8.0",
+    "firebase": "^8.8.0"
   },
   "devDependencies": {
     "typescript": "^4.3.5"
